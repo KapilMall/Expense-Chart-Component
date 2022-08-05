@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.chart-container {
+  padding-right: 10px;
+}
+
+.my-balance {
+  background-color: hsl(10, 79%, 65%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.balance-info {
+  width: 50%;
+}
+
+.my-balance-title {
+  color: hsl(27, 66%, 92%);
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.balance-amount {
+  font-size: 2rem;
+}
+
+.circle-container {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.white-border-circle {
+  height: 50px;
+  width: 50px;
+  border: #fff 3px solid;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.brown-color-circle {
+  position: relative;
+  right: 12%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(25, 47%, 15%);
+}
+
+.expense-chart {
+  background-color: #fff;
+}
+
+.total-spent {
+  background-color: #fff;
+}
+
+.expense-chart {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: hsl(25, 47%, 15%);
+}
+
+.charts {
+  margin-top: 40px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-value {
+  width: 40px;
+  border-radius: 5px;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.day-value {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.day,
+.month-total,
+.last-month {
+  font-size: 400;
+  color: hsl(28, 10%, 53%);
+}
+
+.day {
+  margin-bottom: 20px;
+}
+
+.first-chart {
+  height: 25%;
+}
+
+.second-chart {
+  height: 50%;
+}
+
+.third-chart {
+  height: 75%;
+  background-color: hsl(186, 34%, 60%);
+}
+
+.fourth-chart {
+  height: 45%;
+}
+
+.fifth-chart {
+  height: 35%;
+}
+
+.sixth-chart {
+  height: 65%;
+}
+
+.seventh-chart {
+  height: 40%;
+}
+
+hr {
+  border: 1px solid hsl(27, 66%, 92%);
+}
+
+.total-spent {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.current-month {
+  width: 50%;
+  padding: 20px 0;
+}
+
+.month-total {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.total-amount {
+  font-size: 2.5rem;
+  color: hsl(25, 47%, 15%);
+}
+
+.previous-month {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 15%;
+}
+
+.last-month {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.increased-total {
+  color: hsl(25, 47%, 15%);
+}
+
+.wed-data,
+.thu-data {
+  display: none;
+  background-color: hsl(25, 47%, 15%);
+  padding: 10px 12px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  .chart-container {
+    width: 600px;
+  }
+
+  .chart-value {
+    width: 60px;
+  }
+
+  .previous-month {
+    padding-top: 8%;
+  }
+
+  .brown-color-circle {
+    right: 8%;
+  }
+}

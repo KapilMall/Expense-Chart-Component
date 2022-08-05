@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Chart Component</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div role="container" class="chart-container">
+      <div role="header" class="my-balance">
+        <div class="balance-info">
+          <h3 class="my-balance-title">My balance</h3>
+          <h2 class="balance-amount">&dollar;921.48</h2>
+        </div>
+        <div class="circle-container">
+          <div class="white-border-circle"></div>
+          <div class="brown-color-circle"></div>
+        </div>
+      </div>
+      <div role="chart-value" class="expense-chart">
+        <h1 class="title">Spending - Last 7 days</h1>
+        <div class="charts">
+          <div class="day-value">
+            <p class="day">mon</p>
+            <div class="chart-value first-chart"></div>
+          </div>
+          <div class="day-value">
+            <p class="day">tue</p>
+            <div class="chart-value second-chart"></div>
+          </div>
+          <div class="day-value">
+            <p class="day">wed</p>
+            <div class="chart-value third-chart"></div>
+            <div class="wed-data">&dollar;52.36</div>
+          </div>
+          <div class="day-value">
+            <p class="day">thu</p>
+            <div class="chart-value fourth-chart"></div>
+            <div class="thu-data">&dollar;31.07</div>
+          </div>
+          <div class="day-value">
+            <p class="day">fri</p>
+            <div class="chart-value fifth-chart"></div>
+          </div>
+          <div class="day-value">
+            <p class="day">sat</p>
+            <div class="chart-value sixth-chart"></div>
+          </div>
+          <div class="day-value">
+            <p class="day">sun</p>
+            <div class="chart-value seventh-chart"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="total-spent">
+          <div class="current-month">
+            <h3 class="month-total">Total this month</h3>
+            <h1 class="total-amount">&dollar;478.33</h1>
+          </div>
+          <div class="previous-month">
+            <h3 class="increased-total">+2.4%</h3>
+            <h3 class="last-month">from last month</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
